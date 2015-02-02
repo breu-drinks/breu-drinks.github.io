@@ -3,5 +3,33 @@ title: Welcome to Middleman
 layout: home
 ---
 
-h1 bootstrap-sass-slim
-p A Middleman Project Template built with Twitter Bootstrap, Sass & Slim
+.navigation
+  .logo
+    h2 Breu LOGO
+  nav
+    ul.pull-right
+      li Drinks
+      li How to get
+
+.container.fill
+  #carousel.carousel.slide data-ride="carousel"
+    ol.carousel-indicators
+      li.active data-target="#carousel" data-slide-to="0"
+      li data-target="#carousel" data-slide-to="1"
+      li data-target="#carousel" data-slide-to="2"
+
+    .carousel-inner role='listbox'
+      .item.active
+        .fill style="background-image:url('//placehold.it/1024x700/CC1111/FFF');"
+      .item
+        .fill style="background-image:url('//placehold.it/1024x700/CC1111/FFF');"
+      .item
+        .fill style="background-image:url('//placehold.it/1024x700/CC1111/FFF');"
+
+  a.left.carousel-control href="#carousel" role="button" data-slide="prev"
+    span.glyphicon.glyphicon-chevron-left aria-hidden="true"
+    span.sr-only Previous
+
+  a.right.carousel-control href="#carousel" role="button" data-slide="next"
+    span.glyphicon.glyphicon-chevron-right aria-hidden="true"
+    span.sr-only Next
