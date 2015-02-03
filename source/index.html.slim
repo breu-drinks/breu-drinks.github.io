@@ -3,13 +3,14 @@ title: Welcome to Middleman
 layout: home
 ---
 
-.navigation
+.header
   .logo
-    h2 Breu LOGO
+    = image_tag 'logo.png', alt: 'Breu'
+.navigation
   nav
     ul.pull-right
-      li Drinks
-      li How to get
+      li = link_to 'Drinks', '/drinks.html'
+      li = link_to 'How to get', '/how-to-get.html'
 
 .container.fill
   #carousel.carousel.slide data-ride="carousel"
@@ -20,11 +21,17 @@ layout: home
 
     .carousel-inner role='listbox'
       .item.active
-        .fill style="background-image:url('//placehold.it/1024x700/CC1111/FFF');"
+        .fill style="background-image:url('/img/background-01.jpg');"
+        .carousel-caption
+          h1 Handcrafted infused beverages using the freshest ingredients
       .item
-        .fill style="background-image:url('//placehold.it/1024x700/CC1111/FFF');"
+        .fill style="background-image:url('/img/background-02.jpg');"
+        .carousel-caption
+          h1 Honest flavours, thats right I said it
       .item
-        .fill style="background-image:url('//placehold.it/1024x700/CC1111/FFF');"
+        .fill style="background-image:url('/img/background-03.jpg');"
+        .carousel-caption
+          h1 Honest flavours, thats right I said it
 
   a.left.carousel-control href="#carousel" role="button" data-slide="prev"
     span.glyphicon.glyphicon-chevron-left aria-hidden="true"
