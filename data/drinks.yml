@@ -1,0 +1,22 @@
+intro: |
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo ante, tincidunt non ullamcorper vel, blandit eu odio. Suspendisse vehicula sed magna ut lobortis. Duis ut turpis non mauris eleifend laoreet non ac lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent posuere mauris id sapien laoreet aliquam. Proin convallis metus ac consectetur sodales. Nunc vitae lectus quam. Vestibulum ligula nunc, vulputate non maximus sed, sollicitudin et orci. Etiam lobortis nulla justo, eu fringilla nunc finibus eget.</p>
+  <p>Sed turpis ante, fringilla vel lorem ut, tempus tincidunt eros. Phasellus varius nunc sed urna volutpat, eu pulvinar lectus varius. Quisque mauris sem, feugiat ac mauris sit amet, molestie pretium tortor. Aliquam erat volutpat. Vivamus vulputate imperdiet leo, in vehicula tortor. Sed eget mi urna. Aliquam aliquet lacus turpis, at accumsan leo dapibus vitae. Sed dictum justo in velit porta luctus. Duis cursus risus rhoncus risus egestas, eu ultricies neque ultricies. Vestibulum quis nisl eros. Vivamus sagittis est vel efficitur tincidunt. Etiam tortor tortor, lacinia vehicula tristique quis, scelerisque quis purus. Pellentesque suscipit consectetur neque, ac semper nisi.</p>
+drinks:
+  - name: Drink Name
+    image_url: holder.js/400x400
+    description: Some test
+  - name: Drink Name
+    image_url: holder.js/400x400
+    description: Some test
+  - name: Drink Name
+    image_url: holder.js/400x400
+    description: Some test
+  - name: Drink Name
+    image_url: holder.js/400x400
+    description: Some test
+  - name: Drink Name
+    image_url: holder.js/400x400
+    description: Some test
+  - name: Drink Name
+    image_url: holder.js/400x400
+    description: Some test

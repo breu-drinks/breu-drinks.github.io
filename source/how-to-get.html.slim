@@ -1,11 +1,19 @@
 = partial 'navigation'
-.container.with-nav role='main'
-  h1 Contact Us
+.container.content.with-nav role='main'
+  h1.page-title Contact Us
 
   form accept-charset="UTF-8" action="https://formkeep.com/f/c7fbe2c1d76e" method="POST"
     input type="hidden" name="utf8" value="✓"
-    input type="email" name="email" placeholder="Your Email"
-    input type="text" name="name" placeholder="Your Name"
-    input type="url" name="url" placeholder="Your Website"
+    .form-group
+      label for="email" Email address
+      input.form-control type="email" id='email' name="email" placeholder="Your Email"
+    .form-group
+      label for="name" Full name
+      input.form-control type="text" name="name" placeholder="Your Name"
+    .form-group
+      label for="url" Url
+      input.form-control type="url" name="url" placeholder="Your Website"
 
-    button type="submit" Contact Us
+    button.btn.btn-default type="submit" Contact Us
+
+  = partial 'footer'

@@ -1,3 +1,13 @@
 = partial 'navigation'
-.container.with-nav role='main'
-  h1 Drinks
+.container.content.with-nav role='main'
+  h1.page-title Drinks
+  = data.drinks.intro
+  .drinks.row
+    - data.drinks.drinks.each do |drink|
+      .col-md-6.col-lg-4
+        .thumbnail
+          img src="#{drink.image_url}"
+          .caption
+            h3 Drink #{drink.name}
+            p #{drink.description}
+  = partial 'footer'
