@@ -1,3 +1,5 @@
+@import "bootstrap";
+
 html {
   height: 100%;
 }
@@ -13,14 +15,34 @@ body.index {
   .carousel-inner {
     height: 100%;
     .carousel-caption {
-      background: rgba(0, 0, 0, 0.6);
-      margin: 0 0 30px 0;
+      background: rgba(0, 0, 0, 0.4);
+      margin: 0;
+      padding-bottom: 60px;
       width: 100%;
       left: 0;
-      bottom: 50px;
+      bottom: 0px;
       h1, h2, h3 {
         line-height: 1.5;
         margin: 0 10px;
+        strong {
+          color: #ffcc33;
+        }
+      }
+    }
+    @media (max-width: $screen-xs-min) {
+      .carousel-caption {
+        padding-bottom: 10px;
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+    @media (max-width: $screen-sm-min) {
+      .carousel-caption {
+        padding-bottom: 10px;
+        h1 {
+          font-size: 26px;
+        }
       }
     }
   }
@@ -35,35 +57,65 @@ body.index {
   }
 
   .header {
-    margin-top: 20px;
+    padding-top: 20px;
     position: absolute;
     z-index: 999;
     width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    @media (min-width: $screen-md-min) {
+      padding-bottom: 20px;
+    }
     .logo {
       position: relative;
       margin: auto auto;
       max-width: 85px;
     }
   }
+
   .navigation {
-    margin-top: 40px;
+    margin-top: 100px;
     position: absolute;
     z-index: 999;
-    width: 90%;
+    width: 100%;
     color: white;
     nav {
       ul {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.4);
         padding: 0;
+        width: 100%;
         li {
           float: left;
           display: inline-block;
           padding: 0;
+          width: 100%;
+          text-align: center;
           a {
             display: inline-block;
             color: white;
             padding: 10px 30px;
+            width: 100%;
+            &:hover, &:focus {
+              color: #ffcc33;
+              background: rgba(0, 0, 0, 0.4);
+              text-decoration: none;
+            }
           }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .navigation {
+      margin-top: 40px;
+      nav ul {
+        width: auto;
+        float: right;
+        margin-right: 30px;
+        background: none;
+        li {
+          width: auto;
+          text-align: right;
         }
       }
     }
