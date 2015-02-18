@@ -3,13 +3,13 @@ title: Breu - Infused beverages
 ---
 
 .header
-  .logo
-    = image_tag 'logo.png', alt: 'Breu'
-.navigation
-  nav
-    ul.pull-right
-      li = link_to 'Drinks', '/drinks.html'
-      li = link_to 'How to get', '/how-to-get.html'
+  .navbar.navbar-inverse role='navigation'
+    .navbar-inner
+      .nav-center
+        = link_to 'Drinks', '/drinks.html', class: 'menu'
+        a
+          = image_tag 'logo.png', alt: 'Breu'
+        = link_to 'How to get', '/how-to-get.html', class: 'menu'
 
 .container.fill
   #carousel.carousel.slide data-ride="carousel"

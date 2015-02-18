@@ -106,3 +106,10 @@ activate :deploy do |deploy|
   # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.strategy = :submodule
 end
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = ENV['AWS_BUCKET']     # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = ENV['AWS_REGION']     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = ENV['AWS_KEY_ID']
+  s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_KEY']
+end

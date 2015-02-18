@@ -7,6 +7,7 @@ gem 'middleman', '~> 3.3.6'
 gem 'middleman-livereload', '~> 3.3.4'
 # Deploy plugin
 gem 'middleman-deploy', '~> 0.3.0'
+gem 'middleman-s3_sync'
 # Images compress plugin
 gem 'middleman-imageoptim', '~> 0.1.4'
 

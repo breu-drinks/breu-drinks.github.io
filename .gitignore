@@ -7,6 +7,9 @@
 # Ignore bundler config
 /.bundle
 
+# S3 Sync settings
+/.s3_sync
+
 # Ignore the build directory
 /build
 
