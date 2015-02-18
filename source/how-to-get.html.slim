@@ -1,19 +1,26 @@
 = partial 'navigation'
 .container.content.with-nav role='main'
   h1.page-title Contact Us
+  p What to find out more? Send us a message
 
-  form accept-charset="UTF-8" action="https://formkeep.com/f/c7fbe2c1d76e" method="POST"
+  form accept-charset="UTF-8" action="https://formkeep.com/f/6774588a4b22" method="POST"
     input type="hidden" name="utf8" value="✓"
     .form-group
-      label for="email" Email address
-      input.form-control type="email" id='email' name="email" placeholder="Your Email"
+      label for="business_name" Business name
+      input.form-control type="text" name="business_name" placeholder="Business Name"
     .form-group
       label for="name" Full name
       input.form-control type="text" name="name" placeholder="Your Name"
     .form-group
-      label for="url" Url
-      input.form-control type="url" name="url" placeholder="Your Website"
+      label for="email" Email address
+      input.form-control type="email" id='email' name="email" placeholder="Your Email"
+    .form-group
+      label for="subject" Subject
+      input.form-control type="text" name="subject" placeholder="Subject"
+    .form-group
+      label for="message" Message
+      textarea.form-control name="message" placeholder="Ask us anything :)" rows='10'
 
-    button.btn.btn-default type="submit" Contact Us
+    button.btn.btn-primary type="submit" Contact Us
 
   = partial 'footer'
