@@ -15,9 +15,18 @@
 @import "drinks";
 @import "how-to-get";
 
-.placeholder {
-  width: 100%;
-  min-width: 700px;
+.picture-content {
+  img {
+    width: 100%;
+  }
+}
+
+img.logo {
+  margin-top: 20px;
+  width: 80%;
+  @media (min-width: $screen-sm-min) {
+    width: 50%;
+  }
 }
 
 .social-links {
@@ -31,5 +40,5 @@
       color: $brand-primary;
     }
   }
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
