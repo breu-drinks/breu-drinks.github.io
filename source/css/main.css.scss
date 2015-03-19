@@ -5,6 +5,8 @@
 @import "bootstrap-compass";
 @import "bootstrap";
 
+@import "font-awesome";
+
 @import "base";
 
 @import "navigation";
@@ -16,4 +18,18 @@
 .placeholder {
   width: 100%;
   min-width: 700px;
+}
+
+.social-links {
+  a {
+    .fa {
+      font-size: 3em;
+      margin: 0 10px;
+    }
+    color: lighten(black, 5%);
+    &:hover, &:focus {
+      color: $brand-primary;
+    }
+  }
+  margin-bottom: 20px;
 }
