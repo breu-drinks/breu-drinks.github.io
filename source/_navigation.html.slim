@@ -1,17 +1,26 @@
-nav.navbar.navbar-inverse.navbar-fixed-top
+.fluid-container.header
   .container
-    .navbar-header
-      button.navbar-toggle.collapsed type='button' data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
-        span.sr-only Toggle Navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      = link_to '/index.html', class: 'navbar-brand' do
-        = image_tag 'logo.png', alt: 'Breu'
+    .row.navigation
+      .col-md-4.brand.text-center
+        = link_to '/index.html', class: 'breu-brand' do
+          = image_tag 'logo-word.png', alt: 'Breu'
+      .col-md-8
+        .row.text-center
+          .col-sm-8.tag-line
+            | - SUGAR FREE - DIARY FREE -
+        .row
+          .col-sm-8.text-center
+            ul.menu
+              li = nav_link 'ABOUT', '/about.html', active_if: %r{^/about.html}
+              li = nav_link 'DRINKS', '/drinks.html', active_if: %r{^/drinks.html}
+              li = nav_link 'HOW TO GET', '/how-to-get.html', active_if: %r{^/how-to-get.html}
+              li = nav_link 'CONTACT', '/contact.html', active_if: %r{^/contact.html}
 
-    #navbar.navbar-collapse.collapse
-      ul.nav.navbar-nav
-        li = link_to 'Home', '/index.html'
-        li = link_to 'Drinks', '/drinks.html'
-        li = link_to 'How to get', '/how-to-get.html'
-
+          .col-sm-4.text-center
+            ul.social-links
+              li= link_to 'https://instagram.com/breudrinks', target: '_blank' do
+                i.fa.fa-instagram
+              li= link_to 'https://www.facebook.com/breudrinks', target: '_blank' do
+                i.fa.fa-facebook
+              li= link_to 'https://twitter.com/breudrinks', target: '_blank' do
+                i.fa.fa-twitter

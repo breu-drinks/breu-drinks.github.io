@@ -1,22 +1,13 @@
-intro: |
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo ante, tincidunt non ullamcorper vel, blandit eu odio. Suspendisse vehicula sed magna ut lobortis. Duis ut turpis non mauris eleifend laoreet non ac lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent posuere mauris id sapien laoreet aliquam. Proin convallis metus ac consectetur sodales. Nunc vitae lectus quam. Vestibulum ligula nunc, vulputate non maximus sed, sollicitudin et orci. Etiam lobortis nulla justo, eu fringilla nunc finibus eget.</p>
-  <p>Sed turpis ante, fringilla vel lorem ut, tempus tincidunt eros. Phasellus varius nunc sed urna volutpat, eu pulvinar lectus varius. Quisque mauris sem, feugiat ac mauris sit amet, molestie pretium tortor. Aliquam erat volutpat. Vivamus vulputate imperdiet leo, in vehicula tortor. Sed eget mi urna. Aliquam aliquet lacus turpis, at accumsan leo dapibus vitae. Sed dictum justo in velit porta luctus. Duis cursus risus rhoncus risus egestas, eu ultricies neque ultricies. Vestibulum quis nisl eros. Vivamus sagittis est vel efficitur tincidunt. Etiam tortor tortor, lacinia vehicula tristique quis, scelerisque quis purus. Pellentesque suscipit consectetur neque, ac semper nisi.</p>
 drinks:
-  - name: Drink Name
-    image_url: holder.js/400x400
-    description: Some test
-  - name: Drink Name
-    image_url: holder.js/400x400
-    description: Some test
-  - name: Drink Name
-    image_url: holder.js/400x400
-    description: Some test
-  - name: Drink Name
-    image_url: holder.js/400x400
-    description: Some test
-  - name: Drink Name
-    image_url: holder.js/400x400
-    description: Some test
-  - name: Drink Name
-    image_url: holder.js/400x400
-    description: Some test
+  - name: THE CHAI WALLAH'S FAVOURITE
+    image_url: http://placehold.it/350x350
+    description: An authentic 7-spice masala chai in smooth cashew milk
+    ingredients: Ingredients:Filtered water, raw activated cashews spices, xylitol, sea salt
+  - name: BREU SPECIAL
+    image_url: http://placehold.it/350x350
+    description: Lavender and mint infused smooth cashew milk with a blend of herbs and spices
+    ingredients: Filtered water, raw activated cashews herbs, spices, xylitol, sea salt
+  - name: NEVER TOO MATCHA MINT
+    image_url: http://placehold.it/350x350
+    description: Creamy mint-infused cashew milk with organic matcha and raw cacao nibs
+    ingredients: Filtered water, raw activated cashews, herbs, organic matcha, cacao nibs, xylitol, sea salt

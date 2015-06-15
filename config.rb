@@ -124,3 +124,18 @@ activate :s3_sync do |s3_sync|
   s3_sync.aws_access_key_id          = ENV['AWS_KEY_ID']
   s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_KEY']
 end
+
+helpers do
+  def nav_link(name, url, options={})
+    options = {
+      class: "",
+      active_if: url,
+      page: current_page.url,
+    }.update options
+    active_url = options.delete(:active_if)
+    active = Regexp === active_url ? current_page.url =~ active_url : current_page.url == active_url
+    options[:class] += " active" if active
+
+    link_to name, url, options
+  end
+end
