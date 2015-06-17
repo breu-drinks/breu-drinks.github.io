@@ -7,4 +7,34 @@ title: BREU - how to get
     .col-sm-6
       h3 STOCKLIST
     .col-sm-6
-      iframe src="https://docs.google.com/forms/d/1St1B0TvHbn5kk3P2yyXjo8KEKdTuZW5bmboJS3YpAUk/viewform?embedded=true" width="560" height="500" frameborder="0" marginheight="0" marginwidth="0" Loading...
+      h3 ORDER FORM
+      br
+      form accept-charset="UTF-8" action="https://formkeep.com/f/24d31ae1218f" method="POST"
+        input type="hidden" name="utf8" value="✓"
+
+        .form-group
+          label for='name' Your name
+          input.form-control id='name' type='text' name='name' value='' placeholder='Enter your name'
+
+        .form-group
+          label for='email' Email address
+          input.form-control id='email' type='email' name='email' value='' placeholder='Email address'
+
+        .form-group
+          label for='url' Company URL
+          input.form-control id='url' type='url' name='url' value='' placeholder='Business URL'
+
+        .form-group
+          label for='order' What would you like?
+          textarea.form-control id='order' name='order' value='' placeholder='All the things' rows=5
+
+        .form-group
+          label for='address' Where should we ship it?
+          textarea.form-control id='address' name='address' value='' placeholder='Enter your shipping address' rows=5
+
+        .form-group
+          label for='notes' Anything else?
+          textarea.form-control id='notes' name='notes' value='' placeholder='Extra information we might need to know.' rows=5
+
+        .form-group
+          button.btn.btn-primary type="submit" Order Away

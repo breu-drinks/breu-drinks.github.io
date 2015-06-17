@@ -53,6 +53,7 @@ body.about .content {
     font-size: 2.2em;
     padding-top: 5px;
     margin-bottom: 5px;
+    min-height: 44px;
   }
   .menu li a, .social-links li a {
     display: inline-block;
@@ -75,6 +76,7 @@ body.about .content {
   .seperator {
     margin: 0 15px;
   }
+  h4 { line-height: 140%; }
 }
 
 .content {
