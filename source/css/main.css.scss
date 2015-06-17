@@ -20,6 +20,16 @@ body.index {
   }
 }
 
+body.about {
+  img {
+    width: 100%;
+  }
+  .blurb {
+    padding: 40px 20px 20px 0;
+    font-size: 1.4em;
+  }
+}
+
 .header {
   background: black;
   color: white;
@@ -34,7 +44,7 @@ body.index {
     }
   }
   .navigation {
-    margin: 20px 0 0 0;
+    margin: 20px 0;
     .menu, .menu li {
       margin-bottom: 0px;
     }
@@ -42,13 +52,14 @@ body.index {
   .tag-line {
     font-size: 2.2em;
     padding-top: 5px;
+    margin-bottom: 5px;
   }
   .menu li a, .social-links li a {
     display: inline-block;
     font-size: 1.3em;
     margin-top: 5px;
     font-weight: bold;
-    padding: 0 10px 20px 10px;
+    padding: 0 10px 0px 10px;
     &:hover, &:active {
       text-decoration: none;
     }
