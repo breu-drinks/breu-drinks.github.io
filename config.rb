@@ -100,29 +100,8 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-# middleman-deploy configuration
 activate :deploy do |deploy|
-  # Automatically run `middleman build` during `middleman deploy`
-  # deploy.build_before = true
-
-  # rsync, ftp, sftp, or git
   deploy.method = :git
-
-  # remote name or git url, default: origin
-  # deploy.remote   = 'custom-remote'
-
-  # default: gh-pages
-  # deploy.branch   = 'master'
-
-  # commit strategy: can be :force_push or :submodule, default: :force_push
-  # deploy.strategy = :submodule
-end
-
-activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = ENV['AWS_BUCKET']     # The name of the S3 bucket you are targetting. This is globally unique.
-  s3_sync.region                     = ENV['AWS_REGION']     # The AWS region for your bucket.
-  s3_sync.aws_access_key_id          = ENV['AWS_KEY_ID']
-  s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_KEY']
 end
 
 helpers do
