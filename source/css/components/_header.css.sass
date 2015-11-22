@@ -1,0 +1,21 @@
+.header
+  $header-height: 51px
+  .breu-brand
+    img
+      margin: ($header-height - 43px)/2
+  .contact-links
+    margin-bottom: 0px
+    a
+      height: $header-height
+      line-height: $header-height
+      span
+        margin: 0 0.3em
+  .brand, .links
+    display: inline-block
+  .links
+    float: right
+  @media (max-width: $screen-sm-max)
+    .brand, .links
+      width: 100%
+      text-align: center
+      float: none
