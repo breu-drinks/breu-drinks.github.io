@@ -1,3 +1,18 @@
 footer.footer
   .text-center
     p BREU &copy; #{Time.now.year}
+    ul.list-inline
+      li: a href='tel:+61425848368'
+        i.fa.fa-phone
+        span +61 425 848 368
+      li: a href='mail:adora@breu.com.au'
+        i.fa.fa-send
+        span adora@breu.com.au
+    ul.list-inline
+      li= link_to 'https://instagram.com/breudrinks', target: '_blank' do
+        i.fa.fa-instagram.fa-lg
+      li= link_to 'https://www.facebook.com/breudrinks', target: '_blank' do
+        i.fa.fa-facebook.fa-lg
+      li= link_to 'https://twitter.com/breudrinks', target: '_blank' do
+        i.fa.fa-twitter.fa-lg
+
