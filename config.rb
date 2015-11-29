@@ -102,6 +102,7 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.remote = 'deploy'
 end
 
 helpers do
