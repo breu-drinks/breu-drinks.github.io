@@ -102,7 +102,7 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote = 'https://github.com/breu-drinks/breu-drinks.github.io.git'
+  deploy.remote = 'https://github.com/breudrinks/breudrinks.git'
 end
 
 helpers do
