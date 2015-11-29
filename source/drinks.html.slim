@@ -1,16 +1,21 @@
 ---
 title: BREU - drinks
 ---
-= partial 'navigation'
-= partial 'banner'
+= partial 'header'
+= partial 'navbar'
 .container.content
+  .text-center
+    h1 Range
   .row
     - data.drinks.drinks.each do |drink|
       .col-sm-4
         .thumbnail.drink
           img src="#{drink.image_url}"
-          .title #{drink.name}
+          .title: h3 #{drink.name}
           .description #{drink.description}
           .ingredients
-            | [ingredients: #{drink.ingredients}]
-  = partial 'footer'
+            h5 Ingredients
+            ul
+              - drink.ingredients.split(':').last.split(',').each do |elm|
+                li= elm
+= partial 'footer'
