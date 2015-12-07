@@ -13,9 +13,6 @@ title: BREU - drinks
           img src="#{drink.image_url}"
           .title: h3 #{drink.name}
           .description #{drink.description}
-          .ingredients
-            h5 Ingredients
-            ul
-              - drink.ingredients.split(':').last.split(',').each do |elm|
-                li= elm
-= partial 'footer'
+          p.ingredients
+            strong Ingredients: 
+            i= drink.ingredients.split(':').last
